@@ -5,10 +5,11 @@ import Link from 'gatsby-link'
 const Hero = props => (
     <div>
         <Head />
+        <Quote>Ma volonté est de créer le carrefour de tous mes outils de communication — Kylian Mbappe</Quote>
         <News>
             <NewsScreen src="https://res.cloudinary.com/aplu/image/upload/v1536505473/KM-Timeline-phone2_yl6dyv.png" />
             <div className="grid">
-                <Title>Ne manquez pas une miette</Title>
+                <Title>Ne manquez plus une miette</Title>
                 <Text>Hey there, this is the default text for a new paragraph. Feel free to edit this paragraph by clicking on the yellow edit icon. After you are done just click on the yellow checkmark button on the top right. Have Fun! Hey there, this is the default text for a new paragraph. Feel free to edit this paragraph by clicking on the yellow edit icon.</Text>
             </div>
         </News>
@@ -40,6 +41,9 @@ const Head = styled.header`
             max-width: 100%;
         }
 	}
+`
+const Quote = styled.h2`
+
 `
 const News = styled.div`
     background-image: url('https://res.cloudinary.com/aplu/image/upload/v1536505252/KM-Timeline-image7_ugtkrm.png');

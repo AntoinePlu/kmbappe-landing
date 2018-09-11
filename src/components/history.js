@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Link from 'gatsby-link'
 
 const History = props => (
 	<HistoryWrapper id="makingof">
@@ -19,6 +18,21 @@ const History = props => (
             <Text>Depuis le 25 mai, je suis parti avec cette idée folle de pouvoir allier mes passions tout en espérant de pouvoir réaliser un rêve. Pas un seul moment je pouvais imaginé tous ce qui allait se passer durant les semaines à venir (et quelle joie immense vous nous avez donné !). Je sais au fond de moi que j'ai le niveau, je suis sûr de mes compétences, mais vais-je réussir à trouver le moyen de ne pas passer inaperçu une fois mon travail réalisé ? Parmis des centaines, des milliers de messages qu'il doit recevoir chaque jour, comment quelqu'un qui n'est personne peu attirer l'attention ?</Text>
             <Text>En attendant d'avoir une réponse, ma meilleure possibilité était de me faire remarquer par mon travail qui se doit d'être d'une exigence incomparable avant même de tenter tout contact.</Text>
             <Text>Me voilà 4 mois plus tard, après un nombre d'idées et d'essais incalculable, ayant réussi à diriger tous les aspects de ce projet tout en prévoyant la suite.</Text>
+        </ContentWrapper>
+        <Quote>Quand vous faites un projet, qu'est-ce qui est important ? C'est les hommes qui portent ça ! [..] Si vous avez affaire à des gens sérieux, compétents et surtout qui ont une parle, vous êtes tranquille. — Wilfrid Mbappe</Quote>
+        <ContentWrapper className="grid">
+            <Title>Qui suis-je ?</Title>
+            <Text>Antoine Plu, designer indépendant sur Paris. Durant ses 8 dernières années, j'ai travaillé aux côté de différentes entreprises pour les aider à trouver des solutions à leurs problématiques.</Text>
+            <Text>Grâce à mon expérience en agence de communication et social média ou encore dans le marketing mobile, j'ai choisis de me mettre à mon compte pour pouvoir utiliser ces compétences avec différentes sociétés.</Text>
+            <Text>Je crois au fait que le travail d'un designer à une double allégeance entre le client par qui il est payé mais aussi l'audience à laquelle il a une obligation. Cette position d'intermédiaire doit servir de pont pour connecter les éléments entre les deux.</Text>
+            <Text>Étant passionné des Rouges et Bleus mais encore plus par l'évolution de Kylian,    je pense être la personne la plus compétente pour servir de passerelle entre ce projet et son public.</Text>
+            <Logos>
+                <Canal src="static/images/canal.svg"/>
+                <Accor src="static/images/accorhotels.svg"/>
+                <Orange src="static/images/orange.svg"/>
+                <Bnp src="static/images/bnp.svg"/>
+                <Allianz src="static/images/allianz.svg"/>
+            </Logos>
         </ContentWrapper>
     </HistoryWrapper>
 )
@@ -81,5 +95,26 @@ const Carrousel = styled.div`
         }
 	}
 `
+const Quote = styled.h2`
+    color: white;
+    background: #252429;
+    border-radius: 8px;
+    margin: 100px auto;
+    max-width: 56%;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.3;
+    text-align: center;
+    padding: 64px 80px;
+`
+
+const Logos = styled.div`
+    max-width: 960px;
+`
+const Canal = styled.img``
+const Accor = styled.img``
+const Orange = styled.img``
+const Bnp = styled.img``
+const Allianz = styled.img``
 
 export default History
