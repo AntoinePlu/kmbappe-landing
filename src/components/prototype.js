@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Player } from 'video-react';
-import "/Users/antoineplu/code/kmbappe-landing/node_modules/video-react/dist/video-react.css"; // import css
+import "../../node_modules/video-react/dist/video-react.css"; // import css
 
 const Prototype = props => (
 	<VideoContent>
