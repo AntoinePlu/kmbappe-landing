@@ -31,7 +31,7 @@ const Hero = props => (
     </div>
 )
 const Head = styled.header`
-    background-image: url('https://res.cloudinary.com/aplu/image/upload/v1536505004/heroImage_ixhkpm.png');
+    background-image: url('https://res.cloudinary.com/aplu/image/upload/c_scale,w_1280/v1536791366/hero-1_xi0ian.jpg');
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -102,7 +102,7 @@ const Analyze = styled.div`
     padding-left: 455px;
 `
 const Stats = styled.div`
-    background-image: url('https://res.cloudinary.com/aplu/image/upload/v1536592621/wip-9_tuj4ad.png');
+    background-image: url('https://res.cloudinary.com/aplu/image/upload/v1536791318/stats_yppyu7.jpg');
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: 200px 0;
@@ -111,7 +111,7 @@ const Stats = styled.div`
     /*padding-left: 455px;*/
 `
 const Videos = styled.div`
-    background-image: url('http://res.cloudinary.com/aplu/image/upload/c_scale,q_100,w_998/v1536595303/wip-11_2x_a4l4dd.jpg');
+    background-image: url('https://res.cloudinary.com/aplu/image/upload/v1536791270/videos_xefisq.jpg');
     background-size: auto 558px;
     background-repeat: no-repeat;
     background-position: center 80px;
