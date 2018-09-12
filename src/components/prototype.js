@@ -9,9 +9,8 @@ const Prototype = props => (
             <Title>L'indispensable qu'il vous faut.<br/> À porté de main.</Title>
             <Text>Nombre des apps intégrées à votre MacBook Pro disposent de commandes accessibles par la Touch Bar pour vous faciliter les tâches courantes, comme l’envoi d’un e‑mail ou la mise en forme d’un document. La Touch Bar change en .</Text>
             <Player
-                playsInline
-                poster="http://res.cloudinary.com/aplu/image/upload/v1536421585/Prototype-poster_gmohic.png"
-                src="http://res.cloudinary.com/aplu/video/upload/c_scale,w_1440/v1536417944/km-prototype_cfqqqq.mp4"
+                poster="https://res.cloudinary.com/aplu/image/upload/c_scale,h_800,q_50/v1536421585/Prototype-poster_gmohic.jpg"
+                src="https://res.cloudinary.com/aplu/video/upload/ac_none,c_scale,h_800,q_50,vc_auto/v1536417944/km-prototype_cfqqqq.mp4"
             />
         </Wrapper>
     </VideoContent>
