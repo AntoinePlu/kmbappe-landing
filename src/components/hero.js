@@ -5,7 +5,10 @@ import Link from 'gatsby-link'
 const Hero = props => (
     <div>
         <Head />
-        <Quote>Ma volonté est de créer le carrefour de tous mes outils de communication — Kylian Mbappe</Quote>
+        <QuoteWrapper>
+            <Quote>Ma volonté est de créer le carrefour de tous mes outils de communication.</Quote>
+            <Name>— Kylian Mbappe</Name>
+        </QuoteWrapper>
         <News>
             <NewsScreen src="https://res.cloudinary.com/aplu/image/upload/v1536505473/KM-Timeline-phone2_yl6dyv.png" />
             <div className="grid">
@@ -28,7 +31,6 @@ const Hero = props => (
     </div>
 )
 const Head = styled.header`
-    margin-bottom: 200px;
     background-image: url('https://res.cloudinary.com/aplu/image/upload/v1536505004/heroImage_ixhkpm.png');
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -42,8 +44,33 @@ const Head = styled.header`
         }
 	}
 `
+const QuoteWrapper = styled.div`
+    background: #fafafa;
+    border-radius: 8px;
+    margin: 100px auto;
+    padding: 64px 80px 40px;
+    max-width: 55%;
+    background-image: url('http://res.cloudinary.com/aplu/image/upload/o_10/v1536762014/quote_bssiet.png') ;
+    background-repeat: no-repeat;
+    background-position: 5% -20px;
+`
 const Quote = styled.h2`
-
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.4;
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+`
+const Name = styled.p`
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgba(0,0,0,.5);
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    letter-spacing: -.022em;
+    text-align: center;
+    margin-top: 32px;
+    font-style: italic;
 `
 const News = styled.div`
     background-image: url('https://res.cloudinary.com/aplu/image/upload/v1536505252/KM-Timeline-image7_ugtkrm.png');
@@ -52,6 +79,7 @@ const News = styled.div`
     margin-bottom: 180px;
     display: flex;
     flex-direction: column;
+    margin-top: -100px;
 
     @media (max-width: 640px) {
         max-width: 400px;

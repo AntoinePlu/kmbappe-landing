@@ -19,27 +19,24 @@ const History = props => (
             <Text>En attendant d'avoir une réponse, ma meilleure possibilité était de me faire remarquer par mon travail qui se doit d'être d'une exigence incomparable avant même de tenter tout contact.</Text>
             <Text>Me voilà 4 mois plus tard, après un nombre d'idées et d'essais incalculable, ayant réussi à diriger tous les aspects de ce projet tout en prévoyant la suite.</Text>
         </ContentWrapper>
-        <Quote>Quand vous faites un projet, qu'est-ce qui est important ? C'est les hommes qui portent ça ! [..] Si vous avez affaire à des gens sérieux, compétents et surtout qui ont une parle, vous êtes tranquille. — Wilfrid Mbappe</Quote>
+        <QuoteWrapper>
+            <Quote>Quand vous faites un projet, qu'est-ce qui est important ?<br/>C'est les hommes qui portent ça ! <span>[..]</span> Si vous avez affaire à des gens sérieux, compétents et surtout qui ont une parole, vous êtes tranquille.</Quote>
+            <Name>— Wilfrid Mbappé</Name>
+        </QuoteWrapper>
         <ContentWrapper className="grid">
             <Title>Qui suis-je ?</Title>
             <Text>Antoine Plu, designer indépendant sur Paris. Durant ses 8 dernières années, j'ai travaillé aux côté de différentes entreprises pour les aider à trouver des solutions à leurs problématiques.</Text>
             <Text>Grâce à mon expérience en agence de communication et social média ou encore dans le marketing mobile, j'ai choisis de me mettre à mon compte pour pouvoir utiliser ces compétences avec différentes sociétés.</Text>
             <Text>Je crois au fait que le travail d'un designer à une double allégeance entre le client par qui il est payé mais aussi l'audience à laquelle il a une obligation. Cette position d'intermédiaire doit servir de pont pour connecter les éléments entre les deux.</Text>
             <Text>Étant passionné des Rouges et Bleus mais encore plus par l'évolution de Kylian,    je pense être la personne la plus compétente pour servir de passerelle entre ce projet et son public.</Text>
-            <Logos>
-                <Canal src="static/images/canal.svg"/>
-                <Accor src="static/images/accorhotels.svg"/>
-                <Orange src="static/images/orange.svg"/>
-                <Bnp src="static/images/bnp.svg"/>
-                <Allianz src="static/images/allianz.svg"/>
-            </Logos>
+            <Logos className="full" src="http://res.cloudinary.com/aplu/image/upload/v1536764236/logos_xiknts.png" />
         </ContentWrapper>
     </HistoryWrapper>
 )
 
 const HistoryWrapper = styled.div`
     
-    margin: 0 auto 80px auto;
+    margin: 0 auto;
     padding-top: 180px;
 `
 const ContentWrapper = styled.div`
@@ -95,26 +92,43 @@ const Carrousel = styled.div`
         }
 	}
 `
-const Quote = styled.h2`
-    color: white;
+const QuoteWrapper = styled.div`
     background: #252429;
     border-radius: 8px;
     margin: 100px auto;
-    max-width: 56%;
+    padding: 64px 80px 40px;
+    max-width: 55%;
+    background-image: url('http://res.cloudinary.com/aplu/image/upload/o_30/v1536762014/quote_bssiet.png') ;
+    background-repeat: no-repeat;
+    background-position: 5% -20px;
+`
+const Quote = styled.h2`
+    color: white;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 1.3;
+    font-size: 24px;
+    line-height: 1.4;
     text-align: center;
-    padding: 64px 80px;
-`
+    max-width: 80%;
+    margin: auto;
 
-const Logos = styled.div`
-    max-width: 960px;
+    span {
+        color: #848490;
+    }
 `
-const Canal = styled.img``
-const Accor = styled.img``
-const Orange = styled.img``
-const Bnp = styled.img``
-const Allianz = styled.img``
+const Name = styled.p`
+    font-size: 20px;
+    line-height: 1.5;
+    color: #6e6e7a;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    letter-spacing: -.022em;
+    text-align: center;
+    margin-top: 32px;
+    font-style: italic;
+`
+const Logos = styled.img`
+    max-width: 100%;
+    height: 40px;
+    margin: 80px auto 100px;
+`
 
 export default History
