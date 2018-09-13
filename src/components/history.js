@@ -29,7 +29,7 @@ const History = props => (
             <Text>Grâce à mon expérience en agence de communication et social média ou encore dans le marketing mobile, j'ai choisis de me mettre à mon compte pour pouvoir utiliser ces compétences avec différentes sociétés.</Text>
             <Text>Je crois au fait que le travail d'un designer à une double allégeance entre le client par qui il est payé mais aussi l'audience à laquelle il a une obligation. Cette position d'intermédiaire doit servir de pont pour connecter les éléments entre les deux.</Text>
             <Text>Étant passionné des Rouges et Bleus mais encore plus par l'évolution de Kylian,    je pense être la personne la plus compétente pour servir de passerelle entre ce projet et son public.</Text>
-            <Logos className="full" src="http://res.cloudinary.com/aplu/image/upload/v1536764236/logos_xiknts.png" />
+            <Logos className="full" src="https://res.cloudinary.com/aplu/image/upload/v1536764236/logos_xiknts.png" />
         </ContentWrapper>
     </HistoryWrapper>
 )
@@ -98,9 +98,15 @@ const QuoteWrapper = styled.div`
     margin: 100px auto;
     padding: 64px 80px 40px;
     max-width: 55%;
-    background-image: url('http://res.cloudinary.com/aplu/image/upload/o_30/v1536762014/quote_bssiet.png') ;
+    background-image: url('https://res.cloudinary.com/aplu/image/upload/o_30/v1536762014/quote_bssiet.png') ;
     background-repeat: no-repeat;
     background-position: 5% -20px;
+
+    @media (max-width: 640px) {
+        padding: 80px 0 40px;
+        max-width: 90%;
+        margin: 60px auto;
+    }
 `
 const Quote = styled.h2`
     color: white;
@@ -113,6 +119,10 @@ const Quote = styled.h2`
 
     span {
         color: #848490;
+    }
+
+    @media (max-width: 640px) {
+        max-width: 90%;
     }
 `
 const Name = styled.p`
@@ -129,6 +139,11 @@ const Logos = styled.img`
     max-width: 100%;
     height: 40px;
     margin: 80px auto 100px;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+        height: auto;
+    }
 `
 
 export default History

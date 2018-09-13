@@ -38,7 +38,8 @@ const Head = styled.header`
     height: 700px;
 
     @media (max-width: 640px) {
-		
+		background-size: auto 80%;
+
         img {
             max-width: 100%;
         }
@@ -50,9 +51,15 @@ const QuoteWrapper = styled.div`
     margin: 100px auto;
     padding: 64px 80px 40px;
     max-width: 55%;
-    background-image: url('http://res.cloudinary.com/aplu/image/upload/o_10/v1536762014/quote_bssiet.png') ;
+    background-image: url('https://res.cloudinary.com/aplu/image/upload/o_10/v1536762014/quote_bssiet.png') ;
     background-repeat: no-repeat;
     background-position: 5% -20px;
+
+    @media (max-width: 640px) {
+        padding: 80px 0 40px;
+        max-width: 90%;
+        margin: 24px auto;
+    }
 `
 const Quote = styled.h2`
     font-weight: 400;
@@ -61,6 +68,10 @@ const Quote = styled.h2`
     text-align: center;
     max-width: 60%;
     margin: auto;
+
+    @media (max-width: 640px) {
+        max-width: 90%;
+    }
 `
 const Name = styled.p`
     font-size: 20px;
@@ -83,7 +94,8 @@ const News = styled.div`
 
     @media (max-width: 640px) {
         max-width: 400px;
-        background-position:cover;
+        background-size: auto 68%;
+        margin-top: 10px;
 
         img {
             max-width: 100%;
@@ -100,6 +112,24 @@ const Analyze = styled.div`
     background-position: -100px 0;
     height: 900px;
     padding-left: 455px;
+
+    @media (max-width: 640px) {
+        padding-left: 24px;
+        background-size: 200% auto;
+        background-position: -70px 0;
+        height: 700px;
+
+        h1 { 
+            max-width: 300px;
+            margin: 0;
+            padding-top: 450px;
+        }
+
+        p {
+            max-width: 90%;
+            margin: 0;
+        }
+    }
 `
 const Stats = styled.div`
     background-image: url('https://res.cloudinary.com/aplu/image/upload/v1536791318/stats_yppyu7.jpg');
@@ -109,6 +139,22 @@ const Stats = styled.div`
     height: 700px;
     margin-bottom: 240px;
     /*padding-left: 455px;*/
+
+    @media (max-width: 640px) {
+        background-size: auto 50%;
+        background-position: 50% 0;
+        margin-bottom: 40px;
+
+        h1 { 
+            padding-top: 380px;
+            margin-left: 24px;
+        }
+
+        p {
+            margin-left: 24px;
+            max-width: 90%;
+        }
+    }
 `
 const Videos = styled.div`
     background-image: url('https://res.cloudinary.com/aplu/image/upload/v1536791270/videos_xefisq.jpg');
@@ -118,9 +164,25 @@ const Videos = styled.div`
     height: 650px;
     margin-bottom: 180px;
     
-
     h1 {
         padding-top: 0;
+    }
+    
+    @media (max-width: 640px) {
+        background-size: auto 56%;
+        background-position: center 90%;
+        margin-bottom: 0;
+        height: 440px;
+
+        h1 {
+            max-width: 90%;
+            margin: auto;
+        }
+
+        p {
+            max-width: 90%;
+            margin-top: 12px;
+        }
     }
 `
 const Title = styled.h1`

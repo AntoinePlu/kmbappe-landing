@@ -19,6 +19,10 @@ const Prototype = props => (
 const VideoContent = styled.div`
     background: #000000;
     padding-top: 120px;
+
+    @media (max-width: 640px) {
+        padding-top: 80px;
+    }
 `
 const Wrapper = styled.div`
     max-width:1280px;
@@ -33,6 +37,11 @@ const Title = styled.h1`
     text-align: center;
     color:white;
     margin-block-start: 1.33em;
+
+    @media (max-width: 640px) {
+        max-width: 90%;
+        margin: auto;
+    }
 `
 const Text = styled.p`
     font-size: 17px;
@@ -45,6 +54,10 @@ const Text = styled.p`
     margin: auto;
     margin-top: 1em;
     margin-block-end: 2em;
+
+    @media (max-width: 640px) {
+        max-width: 90%;
+    }
 `
 
 export default Prototype
