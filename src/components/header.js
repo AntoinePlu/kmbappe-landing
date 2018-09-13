@@ -5,10 +5,10 @@ import Link from 'gatsby-link';
 const Header = ({ siteTitle }) => (
   <Navigation>
     <div>
-      <Link to="#makingof">Présentation</Link>
+      <Link to="#presentation">Présentation</Link>
       <Link to="#makingof">Making Of</Link>
       <Link to="#whoami">Qui suis-je ?</Link>
-      <Link to="/contact"><button>Contact</button></Link>
+      <a src="mailto:pluantoine+kmbappe@gmail.com?subject=Application Mobile Kylian Mbappé"><button>Contact</button></a>
     </div>
   </Navigation>
 )
