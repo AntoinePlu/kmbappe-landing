@@ -1,10 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import Link from 'gatsby-link'
 
 const Hero = props => (
     <div>
-        <Head />
+        <Head id="presentation" />
         <QuoteWrapper>
             <Quote>Ma volonté est de créer le carrefour de tous mes outils de communication.</Quote>
             <Name>— Kylian Mbappe</Name>
@@ -36,6 +35,7 @@ const Head = styled.header`
     background-repeat: no-repeat;
     background-position: center;
     height: 700px;
+    margin-top: 40px;
 
     @media (max-width: 640px) {
 		background-size: auto 80%;
@@ -50,7 +50,7 @@ const QuoteWrapper = styled.div`
     border-radius: 8px;
     margin: 100px auto;
     padding: 64px 80px 40px;
-    max-width: 55%;
+    max-width: 800px;
     background-image: url('https://res.cloudinary.com/aplu/image/upload/o_10/v1536762014/quote_bssiet.png') ;
     background-repeat: no-repeat;
     background-position: 5% -20px;
@@ -109,7 +109,7 @@ const Analyze = styled.div`
     background-image: url('https://res.cloudinary.com/aplu/image/upload/v1536531044/gameslist_impgco.png');
     background-size: auto 100%;
     background-repeat: no-repeat;
-    background-position: -100px 0;
+    background-position: 25% 0;
     height: 900px;
     padding-left: 455px;
 
@@ -135,7 +135,7 @@ const Stats = styled.div`
     background-image: url('https://res.cloudinary.com/aplu/image/upload/v1536791318/stats_yppyu7.jpg');
     background-size: auto 100%;
     background-repeat: no-repeat;
-    background-position: 200px 0;
+    background-position: 65% 0;
     height: 700px;
     margin-bottom: 240px;
     /*padding-left: 455px;*/
@@ -167,7 +167,7 @@ const Videos = styled.div`
     h1 {
         padding-top: 0;
     }
-    
+
     @media (max-width: 640px) {
         background-size: auto 56%;
         background-position: center 90%;
