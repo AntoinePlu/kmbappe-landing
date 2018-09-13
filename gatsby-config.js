@@ -4,6 +4,7 @@ module.exports = {
     description: `KMbappe Mobile App by Antoine Plu`,
   },
   plugins: [
-    'gatsby-plugin-react-helmet'
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-styled-components'
   ],
 }
