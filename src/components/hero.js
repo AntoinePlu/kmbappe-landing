@@ -3,7 +3,9 @@ import styled from 'styled-components'
 
 const Hero = props => (
     <div>
-        <Head id="presentation" />
+        <Head id="presentation" className="full">
+            <img src="https://res.cloudinary.com/aplu/image/upload/c_scale,w_1280/v1536791366/hero-1_xi0ian.jpg" />
+        </Head>
         <QuoteWrapper>
             <Quote>Ma volonté est de créer le carrefour de tous mes outils de communication.</Quote>
             <Name>— Kylian Mbappe</Name>
@@ -29,19 +31,21 @@ const Hero = props => (
         </Videos>
     </div>
 )
-const Head = styled.header`
-    background-image: url('https://res.cloudinary.com/aplu/image/upload/c_scale,w_1280/v1536791366/hero-1_xi0ian.jpg');
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+const Head = styled.div`
     height: 700px;
     margin-top: 40px;
+    display: flex;
+
+    img {
+        max-width: 100%;
+        margin: auto;
+    }
 
     @media (max-width: 640px) {
-		background-size: auto 80%;
 
         img {
-            max-width: 100%;
+            max-width: 200%;
+	        margin-left: -53%;
         }
 	}
 `
