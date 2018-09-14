@@ -72,6 +72,10 @@ const Navigation = styled.nav`
     opacity: 0.75;
   }
 
+  /*@media (max-width: 640px) {
+    display: none;
+  }*/
+
 `
 
 

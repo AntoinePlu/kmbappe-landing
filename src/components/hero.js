@@ -50,6 +50,10 @@ const Head = styled.div`
     }
 
     @media (max-width: 640px) {
+        height: 480;
+        max-width: 100%;
+        overflow: hidden;
+        margin: 0;
 
         img {
             max-width: 200%;
@@ -70,7 +74,7 @@ const QuoteWrapper = styled.div`
     @media (max-width: 640px) {
         padding: 80px 0 40px;
         max-width: 90%;
-        margin: 24px auto;
+        margin: 24px auto 64px auto;
     }
 `
 const Quote = styled.h2`
@@ -110,6 +114,7 @@ const News = styled.div`
 
         img {
             max-width: 100%;
+            margin-top: 120px;
         }
     }
 `
@@ -145,20 +150,29 @@ const Analyze = styled.div`
         }
     }
     @media (max-width: 640px) {
-        padding-left: 24px;
-        background-size: 200% auto;
-        background-position: -70px 0;
+        padding-left: 0;
+        background-size: auto;
+        background-position: 0;
+        max-width: 100%;
+	    overflow: hidden;
         flex-direction: column;
-
-        h1 { 
-            max-width: 300px;
+        
+        div {
             margin: 0;
-            padding-top: 450px;
-        }
 
-        p {
-            max-width: 90%;
-            margin: 0;
+            h1 { 
+                max-width: 300px;
+                margin: 0 auto 0.5em auto;
+	            text-align: center;
+                padding-top: 450px;
+                padding-top: 0;
+            }
+
+            p {
+                max-width: 90%;
+                margin: 0 auto 80px auto;
+                text-align: center;
+            }
         }
     }
 `
@@ -193,14 +207,16 @@ const Stats = styled.div`
     }
 
     @media (max-width: 640px) {
-        margin-bottom: 40px;
+        margin-bottom: 120px;
         flex-direction: column;
         margin-left: 0;
+        max-width: 100%;
+	    overflow: hidden;
         
         img {
             max-height: 500px;
             margin: auto;
-            margin-left: -14%;
+            margin-left: -19%;
         }
         div {
             margin: 32px 0 40px 0;
@@ -213,7 +229,7 @@ const Stats = styled.div`
 
             p {
                 margin: 0 auto;
-                max-width: 80%;
+                max-width: 90%;
                 text-align: center;
             }
         }
