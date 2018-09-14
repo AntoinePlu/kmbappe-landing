@@ -26,8 +26,12 @@ const Hero = props => (
             </div>
         </Analyze>
         <Stats>
-            <StatsTitle>Des statistiques pensés pour vous</StatsTitle>
-            <StatsText>Analysez les performances de Kylian durant chaque match et comparez-le à d'autres joueurs pour confirmer votre ressenti.</StatsText>
+            <SeasonStats
+                src="https://res.cloudinary.com/aplu/image/upload/v1536791318/stats_yppyu7.jpg" />
+            <div>
+                <StatsTitle>Avec toutes les statistiques, plus rien ne peux vous échapper</StatsTitle>
+                <StatsText>Analysez les performances de Kylian durant chaque match et comparez-le à d'autres joueurs pour confirmer votre ressenti. Analysez les performances de Kylian durant chaque match et comparez-le à d'autres joueurs pour confirmer votre ressenti.</StatsText>
+            </div>
         </Stats>
         <Videos>
             <Title>Revivez les meilleurs moments</Title>
@@ -161,29 +165,56 @@ const Fixture = styled.img`
 
 `
 const Stats = styled.div`
-    background-image: url('https://res.cloudinary.com/aplu/image/upload/v1536791318/stats_yppyu7.jpg');
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: 65% 0;
-    height: 700px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 240px;
-    /*padding-left: 455px;*/
+    margin-left: 12%;
+    
+    div {
+        margin-right: -50px;
+    }
+
+    h1 {
+        margin-top: 0;
+        margin-left: 0;
+        padding-top: 0;
+        max-width: 480px;
+    }
+
+    p {
+        max-width: 480px;
+        margin-left: 0;
+    }
 
     @media (max-width: 640px) {
-        background-size: auto 50%;
-        background-position: 50% 0;
         margin-bottom: 40px;
-
-        h1 { 
-            padding-top: 380px;
-            margin-left: 24px;
+        flex-direction: column;
+        
+        img {
+            max-height: 500px;
+            margin: auto;
         }
+        div {
+            margin-top: 32px;
+            
+            h1 { 
+                text-align: center;
+                margin: 0 auto 0.5em auto;
+                max-width: 75%;
+            }
 
-        p {
-            margin-left: 24px;
-            max-width: 90%;
+            p {
+                margin: 0 auto;
+                max-width: 80%;
+                text-align: center;
+            }
         }
     }
+`
+const SeasonStats = styled.img`
+    max-height: 750px;
 `
 const Videos = styled.div`
     background-image: url('https://res.cloudinary.com/aplu/image/upload/v1536791270/videos_xefisq.jpg');
@@ -216,7 +247,7 @@ const Videos = styled.div`
 `
 const Title = styled.h1`
     font-size: 40px;
-    line-height: 1.2;
+    line-height: 1.1;
     font-weight: 600;
     letter-spacing: 0em;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
@@ -238,7 +269,7 @@ const LeftTitle = styled(Title)`
     padding-top: 362px;
     max-width: 500px;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 0.5em;
 `
 const LeftText = styled(Text)`
     text-align: left;
