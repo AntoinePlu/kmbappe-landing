@@ -20,6 +20,7 @@ const Navigation = styled.nav`
   border-bottom: 1px solid #f1f1f1;
   padding: 16px 0;
   font-size: 18px;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 
   div {
     display:flex;

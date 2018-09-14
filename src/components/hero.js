@@ -29,7 +29,7 @@ const Hero = props => (
             <SeasonStats
                 src="https://res.cloudinary.com/aplu/image/upload/v1536791318/stats_yppyu7.jpg" />
             <div>
-                <StatsTitle>Avec toutes les statistiques, plus rien ne peux vous échapper</StatsTitle>
+                <StatsTitle>Avec toutes les stats, plus rien ne peux vous échapper</StatsTitle>
                 <StatsText>Analysez les performances de Kylian durant chaque match et comparez-le à d'autres joueurs pour confirmer votre ressenti. Analysez les performances de Kylian durant chaque match et comparez-le à d'autres joueurs pour confirmer votre ressenti.</StatsText>
             </div>
         </Stats>
@@ -80,6 +80,7 @@ const Quote = styled.h2`
     text-align: center;
     max-width: 60%;
     margin: auto;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 
     @media (max-width: 640px) {
         max-width: 90%;
@@ -172,32 +173,37 @@ const Stats = styled.div`
     margin-bottom: 240px;
     margin-left: 12%;
     
+    img {
+        margin-left: 0;
+    }
     div {
-        margin-right: -50px;
+        margin: 120px -120px 0 0;
     }
 
     h1 {
         margin-top: 0;
         margin-left: 0;
         padding-top: 0;
-        max-width: 480px;
+        max-width: 450px;
     }
 
     p {
-        max-width: 480px;
+        max-width: 450px;
         margin-left: 0;
     }
 
     @media (max-width: 640px) {
         margin-bottom: 40px;
         flex-direction: column;
+        margin-left: 0;
         
         img {
             max-height: 500px;
             margin: auto;
+            margin-left: -14%;
         }
         div {
-            margin-top: 32px;
+            margin: 32px 0 40px 0;
             
             h1 { 
                 text-align: center;
