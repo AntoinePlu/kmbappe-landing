@@ -197,6 +197,7 @@ const Title = styled.h1`
     letter-spacing: 0em;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     text-align: center;
+    margin-bottom: 0.5em;
 `
 const Text = styled.p`
     font-size: 17px;
