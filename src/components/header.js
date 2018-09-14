@@ -5,6 +5,7 @@ import Link from 'gatsby-link';
 const Header = ({ siteTitle }) => (
   <Navigation>
     <div>
+      <Link to="/"><img src="https://res.cloudinary.com/aplu/image/upload/v1536934361/mark_wkghk1.svg" /></Link>
       <Link to="#presentation">Présentation</Link>
       <Link to="#makingof">Making Of</Link>
       <Link to="#whoami">Qui suis-je ?</Link>
@@ -21,12 +22,25 @@ const Navigation = styled.nav`
   font-size: 18px;
 
   div {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
+    display:flex;
     justify-items: center;
     align-items: center;
-    max-width: 35%;
+    max-width: 1140px;
     margin: auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+  }
+
+  a:last-child {
+    margin-left: auto;
+  }
+
+  a:not(:last-child) {
+    margin-right: 24px; 
+  }
+  a:first-child {
+    margin-right: 40px;
+    max-height: 24px;
   }
 
   a {
@@ -51,6 +65,10 @@ const Navigation = styled.nav`
       text-transform: uppercase;
       box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
     }
+  }
+  img { 
+    max-height: 24px;
+    opacity: 0.75;
   }
 
 `
