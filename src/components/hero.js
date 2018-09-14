@@ -92,13 +92,13 @@ const Name = styled.p`
     font-style: italic;
 `
 const News = styled.div`
-    background-image: url('https://res.cloudinary.com/aplu/image/upload/c_scale,w_1280/v1536937190/KM-Timeline-image7_z3fc6c.png');
+    background-image: url('https://res.cloudinary.com/aplu/image/upload/v1536941612/KM-Timeline-2_haxc4w.jpg');
     background-repeat: repeat-x;
     background-position: top center;
     margin-bottom: 180px;
     display: flex;
     flex-direction: column;
-    margin-top: -100px;
+    margin-top: 0px;
 
     @media (max-width: 640px) {
         margin-top: 10px;
@@ -109,7 +109,7 @@ const News = styled.div`
     }
 `
 const NewsScreen = styled.img`
-    margin: 250px auto 0 auto;
+    margin: 160px auto 0 auto;
 	max-height: 850px;
 `
 const Analyze = styled.div`
