@@ -101,8 +101,6 @@ const News = styled.div`
     margin-top: -100px;
 
     @media (max-width: 640px) {
-        max-width: 400px;
-        background-size: auto 68%;
         margin-top: 10px;
 
         img {
@@ -141,11 +139,11 @@ const Analyze = styled.div`
             margin: inherit;
         }
     }
-    /*@media (max-width: 640px) {
+    @media (max-width: 640px) {
         padding-left: 24px;
         background-size: 200% auto;
         background-position: -70px 0;
-        height: 700px;
+        flex-direction: column;
 
         h1 { 
             max-width: 300px;
@@ -157,7 +155,7 @@ const Analyze = styled.div`
             max-width: 90%;
             margin: 0;
         }
-    }*/
+    }
 `
 const Fixture = styled.img`
 
