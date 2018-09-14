@@ -17,9 +17,13 @@ const Hero = props => (
                 <Text>Hey there, this is the default text for a new paragraph. Feel free to edit this paragraph by clicking on the yellow edit icon. After you are done just click on the yellow checkmark button on the top right. Have Fun! Hey there, this is the default text for a new paragraph. Feel free to edit this paragraph by clicking on the yellow edit icon.</Text>
             </div>
         </News>
-        <Analyze>
-            <LeftTitle>Analysez chaque match</LeftTitle>
-            <LeftText>Hey there, this is the default text for a new paragraph. Feel free to edit this paragraph by clicking on the yellow edit icon. After you are done just click on the yellow checkmark button on the top right. Have Fun!</LeftText>
+        <Analyze className="full">
+            <Fixture
+                src="https://res.cloudinary.com/aplu/image/upload/v1536940147/fixture-list_bm5619.png" />
+            <div>
+                <LeftTitle>Débrieffez de chaque match</LeftTitle>
+                <LeftText>Hey there, this is the default text for a new paragraph. Feel free to edit this paragraph by clicking on the yellow edit icon. After you are done just click on the yellow checkmark button on the top right. Have Fun!</LeftText>
+            </div>
         </Analyze>
         <Stats>
             <StatsTitle>Des statistiques pensés pour vous</StatsTitle>
@@ -111,14 +115,33 @@ const NewsScreen = styled.img`
 	max-height: 850px;
 `
 const Analyze = styled.div`
-    background-image: url('https://res.cloudinary.com/aplu/image/upload/v1536531044/gameslist_impgco.png');
-    background-size: auto 100%;
+    background-image: url('https://res.cloudinary.com/aplu/image/upload/v1536939967/fixture-bg_g4kuin.jpg');
+    background-size: auto;
     background-repeat: no-repeat;
-    background-position: 25% 0;
-    height: 900px;
-    padding-left: 455px;
+    background-position: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    @media (max-width: 640px) {
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-items: flex-start;
+        margin-left: 24px;
+
+        h1 { 
+            padding-top: 0;
+            margin-top: 0;
+            margin-left: 24px;
+        }
+
+        p {
+            margin: inherit;
+        }
+    }
+    /*@media (max-width: 640px) {
         padding-left: 24px;
         background-size: 200% auto;
         background-position: -70px 0;
@@ -134,7 +157,10 @@ const Analyze = styled.div`
             max-width: 90%;
             margin: 0;
         }
-    }
+    }*/
+`
+const Fixture = styled.img`
+
 `
 const Stats = styled.div`
     background-image: url('https://res.cloudinary.com/aplu/image/upload/v1536791318/stats_yppyu7.jpg');
