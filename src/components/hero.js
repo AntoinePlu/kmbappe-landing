@@ -11,7 +11,7 @@ const Hero = props => (
             <Name>— Kylian Mbappe</Name>
         </QuoteWrapper>
         <News>
-            <NewsScreen src="https://res.cloudinary.com/aplu/image/upload/v1536505473/KM-Timeline-phone2_yl6dyv.png" />
+            <NewsScreen src="https://res.cloudinary.com/aplu/image/upload/v1536939459/news-1_vkntvb.png" />
             <div className="grid">
                 <Title>Ne manquez plus une miette</Title>
                 <Text>Hey there, this is the default text for a new paragraph. Feel free to edit this paragraph by clicking on the yellow edit icon. After you are done just click on the yellow checkmark button on the top right. Have Fun! Hey there, this is the default text for a new paragraph. Feel free to edit this paragraph by clicking on the yellow edit icon.</Text>
@@ -88,7 +88,7 @@ const Name = styled.p`
     font-style: italic;
 `
 const News = styled.div`
-    background-image: url('https://res.cloudinary.com/aplu/image/upload/v1536505252/KM-Timeline-image7_ugtkrm.png');
+    background-image: url('https://res.cloudinary.com/aplu/image/upload/c_scale,w_1280/v1536937190/KM-Timeline-image7_z3fc6c.png');
     background-repeat: repeat-x;
     background-position: top center;
     margin-bottom: 180px;
@@ -107,7 +107,8 @@ const News = styled.div`
     }
 `
 const NewsScreen = styled.img`
-    margin: 200px auto 0 auto;
+    margin: 250px auto 0 auto;
+	max-height: 850px;
 `
 const Analyze = styled.div`
     background-image: url('https://res.cloudinary.com/aplu/image/upload/v1536531044/gameslist_impgco.png');
