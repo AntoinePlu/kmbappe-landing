@@ -1,15 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link';
+import Modal from './modal';
 
 const Header = ({ siteTitle }) => (
   <Navigation>
-    <div>
+    <div className="nav-list">
       <Link to="/"><img src="https://res.cloudinary.com/aplu/image/upload/v1536934361/mark_wkghk1.svg" /></Link>
       <Link to="#presentation">Présentation</Link>
       <Link to="#makingof">Making Of</Link>
       <Link to="#whoami">Qui suis-je ?</Link>
-      <a src="mailto:pluantoine+kmbappe@gmail.com?subject=Application Mobile Kylian Mbappé"><button>Contact</button></a>
+      <Modal />
     </div>
   </Navigation>
 )
@@ -22,7 +23,7 @@ const Navigation = styled.nav`
   font-size: 18px;
   font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 
-  div {
+  .nav-list {
     display:flex;
     justify-items: center;
     align-items: center;
@@ -32,7 +33,7 @@ const Navigation = styled.nav`
     box-sizing: border-box;
   }
 
-  a:last-child {
+  div:last-child {
     margin-left: auto;
   }
 
