@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Player } from 'video-react';
+import { Player, ControlBar, BigPlayButton } from 'video-react';
 import "../../node_modules/video-react/dist/video-react.css"; // import css
 
 const Prototype = props => (
@@ -11,7 +11,12 @@ const Prototype = props => (
             <Player
                 poster="https://res.cloudinary.com/aplu/image/upload/c_scale,h_800,q_50/v1536421585/Prototype-poster_gmohic.jpg"
                 src="https://res.cloudinary.com/aplu/video/upload/c_scale,h_800/v1537374268/KMbappe-demo-1440_sxlihq.mp4"
-            />
+                playsInline
+                video
+            >
+                <BigPlayButton position="center" />
+                <ControlBar disabled autoHide={true}/>
+            </Player>
         </Wrapper>
     </VideoContent>
 )
