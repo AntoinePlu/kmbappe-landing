@@ -32,7 +32,7 @@ class Header extends React.Component {
       <Navigation className={this.state.hasScrolled ? 'header headerScrolled' : 'header'}>
         <div className="nav-list">
           <Link to="/"><img src="https://res.cloudinary.com/aplu/image/upload/v1536934361/mark_wkghk1.svg" /></Link>
-          <Link to="#presentation">Présentation</Link>
+          <Link to="#presentation" className="presentation">Présentation</Link>
           <Link to="#makingof">Making-of</Link>
           <Link to="#about">À Propos</Link>
           <Modal />
@@ -43,15 +43,15 @@ class Header extends React.Component {
 }
 
 const Navigation = styled.nav`
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: #fff;
-      border-bottom: 1px solid #f1f1f1;
-      padding: 16px 0;
-      font-size: 16px;
-      font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-      transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 16px 0;
+    font-size: 16px;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 
     .nav-list {
       display:flex;
@@ -106,6 +106,21 @@ const Navigation = styled.nav`
     /*@media (max-width: 640px) {
       display: none;
     }*/
+
+    @media (max-width: 640px) {
+      .nav-list { padding: 0 16px; }
+      .presentation { display: none; }
+      .nav-list > a:not(:last-child) {
+        margin-right: 16px;
+        font-size: 15px;
+      }
+      .nav-list > a:first-child { 
+        margin-right: 24px
+        max-height: 20px;
+      }
+      img { max-height: 20px; }
+
+    }
 
     &.headerScrolled {
       box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);

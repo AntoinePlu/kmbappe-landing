@@ -54,6 +54,7 @@ const Head = styled.div`
         max-width: 100%;
         overflow: hidden;
         margin: 0;
+        padding-top: 0;
 
         img {
             max-width: 200%;

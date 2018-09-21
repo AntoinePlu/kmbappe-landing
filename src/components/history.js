@@ -5,7 +5,7 @@ import Contact from './contact';
 const History = props => (
 	<HistoryWrapper>
         <ContentWrapper className="grid" id="makingof">
-            <Title>Making Of</Title>
+            <Title>Making-of</Title>
             <Text>Suite à la sortie du site <a src="http://kylianmbappe.com">kylianmbappe.com</a>, j'ai réalisé qu'il y avait une vrai idée qui méritait d'être développé pour passer un cap supérieur. Malgré le risque de travailler pour rien, je me devais de fournir l'effort nécessaire pour présenter ce que je pense être une nouvelle évolution dans la communication à la hauteur d'un sportif tel que Kylian.</Text>
             <Carrousel className="full">
                 <img src="https://res.cloudinary.com/aplu/image/upload/c_scale,h_500/v1536790779/makingof-1_eexrky.jpg" height="500" />

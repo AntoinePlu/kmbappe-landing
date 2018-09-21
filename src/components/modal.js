@@ -110,6 +110,11 @@ const OpenModal = styled.div`
     &:active {
         box-shadow: none;
     }
+
+    @media (max-width: 640px) {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
 `
 
 const ModalBG = styled.div`
