@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Contact from './contact';
 
 const History = props => (
 	<HistoryWrapper id="makingof">
@@ -23,7 +24,7 @@ const History = props => (
             <Quote>Quand vous faites un projet, qu'est-ce qui est important ?<br/>C'est les hommes qui portent ça ! <span>[..]</span> Si vous avez affaire à des gens sérieux, compétents et surtout qui ont une parole, vous êtes tranquille.</Quote>
             <Name>— Wilfrid Mbappé</Name>
         </QuoteWrapper>
-        <ContentWrapper className="grid" id="whoami">
+        <ContentWrapper className="grid" id="about">
             <Title>Qui suis-je ?</Title>
             <Text>Antoine Plu, designer indépendant sur Paris. Durant ses 8 dernières années, j'ai travaillé aux côté de différentes entreprises pour les aider à trouver des solutions à leurs problématiques.</Text>
             <Text>Grâce à mon expérience en agence de communication et social média ou encore dans le marketing mobile, j'ai choisis de me mettre à mon compte pour pouvoir utiliser ces compétences avec différentes sociétés.</Text>
@@ -34,16 +35,13 @@ const History = props => (
                 <ProfilePic src="https://pbs.twimg.com/profile_images/943082975314546689/HVaWQiah_400x400.jpg" />
                 <Author>Antoine Plu</Author>
                 <Job>Designer Indépendant</Job>
-                <Links>
-                    <li><a href="https://www.twitter.com/AntoinePlu">Twitter</a></li>
-                    <li><a href="https://www.dribbble.com/AntoinePlu">Dribbble</a></li>
-                    <li><a href="https://www.linkedin.com/in/AntoinePlu">LinkedIn</a></li>
-                </Links>
                 <Signature />
+                <Contact />
             </Credits>
         </ContentWrapper>
     </HistoryWrapper>
 )
+
 
 const HistoryWrapper = styled.div`
     
@@ -159,6 +157,11 @@ const Logos = styled.img`
 const Credits = styled.div`
     max-width: 60%;
     margin: 0 auto 200px auto;
+
+    > .contactwrapper {
+        width: 40%;
+	    margin: auto;
+    }
 `
 const ProfilePic = styled.img`
     max-width: 80px;

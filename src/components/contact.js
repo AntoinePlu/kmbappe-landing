@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ClickOutside from "react-click-outside";
 
 
-class Modal extends Component {
+class Contact extends Component {
   // constructor to set state and bind "this"
   constructor(props) {
     super(props);
@@ -81,11 +81,11 @@ class Modal extends Component {
         // [styles.modal__inverseTheme]: inverseTheme,
         // [styles.modal__light]: theme === "light",
         // [styles.modal__dark]: theme === "dark",
-      <div>
+      <div className="contactwrapper">
         <OpenModal
             onClick={this.handleClick}
         >
-            Contact
+            Contacter
         </OpenModal>
         {this.state.showModal ? modal : ""}
       </div>
@@ -95,16 +95,18 @@ class Modal extends Component {
 
 const OpenModal = styled.div`
     cursor: pointer;
-    background: white;
     border-radius: 6px;
-    border: 1px solid hsla(0, 0%, 90%, 1);
-    padding: 8px 16px;
+    border: 1px solid #2F80ED;
     text-decoration: none;
-    color: #2F80ED;
     font-weight: 500;
     font-size: 13px;
     text-transform: uppercase;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    background: #2F80ED;
+	color: #fff;
+	padding: 10px 24px;
+	text-align: center;
+	margin: auto;
     display: ${props => props.display};
 
     &:active {
@@ -211,4 +213,4 @@ const Content = styled.div`
 
     `
 
-export default Modal
+export default Contact

@@ -3,80 +3,115 @@ import styled from 'styled-components'
 import Link from 'gatsby-link';
 import Modal from './modal';
 
-const Header = ({ siteTitle }) => (
-  <Navigation>
-    <div className="nav-list">
-      <Link to="/"><img src="https://res.cloudinary.com/aplu/image/upload/v1536934361/mark_wkghk1.svg" /></Link>
-      <Link to="#presentation">Présentation</Link>
-      <Link to="#makingof">Making Of</Link>
-      <Link to="#whoami">Qui suis-je ?</Link>
-      <Modal />
-    </div>
-  </Navigation>
-)
+class Header extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      hasScrolled: false
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll',
+    this.handleScroll)
+  }
+
+  handleScroll = (event) => {
+    const scrollTop = window.pageYOffset
+
+    if (scrollTop > 50) {
+      this.setState({ hasScrolled: true })
+    } else {
+      this.setState({ hasScrolled: false })
+    }
+  }
+
+  render() {
+    return (
+      <Navigation className={this.state.hasScrolled ? 'header headerScrolled' : 'header'}>
+        <div className="nav-list">
+          <Link to="/"><img src="https://res.cloudinary.com/aplu/image/upload/v1536934361/mark_wkghk1.svg" /></Link>
+          <Link to="#presentation">Présentation</Link>
+          <Link to="#makingof">Making-of</Link>
+          <Link to="#about">À Propos</Link>
+          <Modal />
+        </div>
+      </Navigation>
+    )
+  }
+}
 
 const Navigation = styled.nav`
-  width: 100%;
-  background: #fff;
-  border-bottom: 1px solid #f1f1f1;
-  padding: 16px 0;
-  font-size: 18px;
-  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #fff;
+      border-bottom: 1px solid #f1f1f1;
+      padding: 16px 0;
+      font-size: 18px;
+      font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+      transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 
-  .nav-list {
-    display:flex;
-    justify-items: center;
-    align-items: center;
-    max-width: 1140px;
-    margin: auto;
-    padding: 0 24px;
-    box-sizing: border-box;
-  }
-
-  div:last-child {
-    margin-left: auto;
-  }
-
-  a:not(:last-child) {
-    margin-right: 24px; 
-  }
-  a:first-child {
-    margin-right: 40px;
-    max-height: 24px;
-  }
-
-  a {
-    text-decoration: none;
-    color: rgba(0,0,0,.6);
-    font-weight: 500;
-
-    &:hover {
-      text-decoration: underline;
-      cursor: pointer;
+    .nav-list {
+      display:flex;
+      justify-items: center;
+      align-items: center;
+      max-width: 1140px;
+      margin: auto;
+      padding: 0 24px;
+      box-sizing: border-box;
     }
 
-    button {
-      background: white;
-      border-radius: 6px;
-      border: 1px solid hsla(0, 0%, 90%, 1);
-      padding: 8px 16px;
+    .nav-list > div:last-child {
+      margin-left: auto;
+    }
+
+    .nav-list > a:not(:last-child) {
+      margin-right: 24px; 
+    }
+    .nav-list > a:first-child {
+      margin-right: 40px;
+      max-height: 24px;
+    }
+
+    a {
       text-decoration: none;
-      color: #2F80ED;
+      color: rgba(0,0,0,.6);
       font-weight: 500;
-      font-size: 13px;
-      text-transform: uppercase;
-      box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      button {
+        background: white;
+        border-radius: 6px;
+        border: 1px solid hsla(0, 0%, 90%, 1);
+        padding: 8px 16px;
+        text-decoration: none;
+        color: #2F80ED;
+        font-weight: 500;
+        font-size: 13px;
+        text-transform: uppercase;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+      }
     }
-  }
-  img { 
-    max-height: 24px;
-    opacity: 0.75;
-  }
+    img { 
+      max-height: 24px;
+      opacity: 0.75;
+    }
 
-  /*@media (max-width: 640px) {
-    display: none;
-  }*/
+    /*@media (max-width: 640px) {
+      display: none;
+    }*/
 
+    &.headerScrolled {
+      box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
+	    border: white;
+      z-index: 10;
+    }
 `
 
 
