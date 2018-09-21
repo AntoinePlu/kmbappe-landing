@@ -127,6 +127,7 @@ const Quote = styled.h2`
     text-align: center;
     max-width: 80%;
     margin: auto;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 
     span {
         color: #848490;
@@ -177,7 +178,7 @@ const Author = styled.h3`
     margin: 0 auto;
     margin-bottom: 4px;
     letter-spacing: 0em;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     color: white;
     font-weight: 500;
 `

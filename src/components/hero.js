@@ -85,7 +85,7 @@ const Quote = styled.h2`
     text-align: center;
     max-width: 60%;
     margin: auto;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 
     @media (max-width: 640px) {
         max-width: 90%;
@@ -144,6 +144,7 @@ const Analyze = styled.div`
             padding-top: 0;
             margin-top: 0;
             margin-left: 24px;
+            
         }
 
         p {
