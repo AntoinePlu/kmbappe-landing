@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import Contact from './contact';
 
 const History = props => (
-	<HistoryWrapper id="makingof">
-        <ContentWrapper className="grid">
+	<HistoryWrapper>
+        <ContentWrapper className="grid" id="makingof">
             <Title>Making Of</Title>
             <Text>Suite à la sortie du site <a src="http://kylianmbappe.com">kylianmbappe.com</a>, j'ai réalisé qu'il y avait une vrai idée qui méritait d'être développé pour passer un cap supérieur. Malgré le risque de travailler pour rien, je me devais de fournir l'effort nécessaire pour présenter ce que je pense être une nouvelle évolution dans la communication à la hauteur d'un sportif tel que Kylian.</Text>
             <Carrousel className="full">
@@ -44,11 +44,13 @@ const History = props => (
 
 
 const HistoryWrapper = styled.div`
-    
     margin: 0 auto;
-    padding-top: 180px;
+    padding-top: 120px;
 `
 const ContentWrapper = styled.div`
+    &#makingof { padding-top: 100px; }
+    &#about { padding-top: 100px; }
+
     p:not(:nth-child(-1n+2)) {
         margin-bottom: 32px;
     }
@@ -104,7 +106,7 @@ const Carrousel = styled.div`
 const QuoteWrapper = styled.div`
     background: #252429;
     border-radius: 8px;
-    margin: 100px auto;
+    margin: 100px auto 0;
     padding: 64px 80px 40px;
     max-width: 880px;
     background-image: url('https://res.cloudinary.com/aplu/image/upload/o_30/v1536762014/quote_bssiet.png') ;

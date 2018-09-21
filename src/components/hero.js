@@ -41,8 +41,8 @@ const Hero = props => (
 )
 const Head = styled.div`
     height: 700px;
-    margin-top: 40px;
     display: flex;
+    padding-top: 100px;
 
     img {
         max-width: 100%;

@@ -49,8 +49,8 @@ const Navigation = styled.nav`
       background: #fff;
       border-bottom: 1px solid #f1f1f1;
       padding: 16px 0;
-      font-size: 18px;
-      font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+      font-size: 16px;
+      font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
       transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 
     .nav-list {
@@ -81,8 +81,8 @@ const Navigation = styled.nav`
       font-weight: 500;
 
       &:hover {
-        text-decoration: underline;
         cursor: pointer;
+        color: #2F80ED;
       }
 
       button {
@@ -111,6 +111,7 @@ const Navigation = styled.nav`
       box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
 	    border: white;
       z-index: 10;
+      padding: 12px 0;
     }
 `
 
