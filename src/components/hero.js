@@ -122,6 +122,11 @@ const News = styled.div`
             max-width: 100%;
             margin-top: 120px;
         }
+
+        p {
+            max-width: 100%;
+	        padding: 0;
+        }
     }
 `
 const NewsScreen = styled.img`
@@ -166,12 +171,14 @@ const Analyze = styled.div`
         max-width: 100%;
 	    overflow: hidden;
         flex-direction: column;
+
+        img { max-width: 75%; }
         
         div {
             margin: 0;
 
             h1 { 
-                max-width: 300px;
+                max-width: 320px;
                 margin: 0 auto 0.5em auto;
 	            text-align: center;
                 padding-top: 450px;
@@ -234,7 +241,7 @@ const Stats = styled.div`
             h1 { 
                 text-align: center;
                 margin: 0 auto 0.5em auto;
-                max-width: 75%;
+                max-width: 90%;
             }
 
             p {
@@ -271,7 +278,8 @@ const Videos = styled.div`
         background-size: auto 56%;
         background-position: center 90%;
         margin-bottom: 0;
-        height: 440px;
+        height: auto;
+        padding-bottom: 40px;
 
         h1 {
             max-width: 90%;
@@ -281,6 +289,12 @@ const Videos = styled.div`
         p {
             max-width: 90%;
             margin-top: 12px;
+        }
+
+        img {
+            max-width: 420px;
+	        margin: 0 0 0 -20px;
+	        min-width: 0;
         }
     }
 `

@@ -95,7 +95,9 @@ const Carrousel = styled.div`
     }
 
     @media (max-width: 640px) {
-		
+		padding: 0px 20px;
+        margin: 10px 0 40px;
+
         img {
             max-height: 200px;
         }
@@ -114,7 +116,7 @@ const QuoteWrapper = styled.div`
     @media (max-width: 640px) {
         padding: 80px 0 40px;
         max-width: 90%;
-        margin: 60px auto;
+        margin: 40px auto 0px !important;
     }
 `
 const Quote = styled.h2`
