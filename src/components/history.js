@@ -6,7 +6,7 @@ const History = props => (
 	<HistoryWrapper>
         <ContentWrapper className="grid" id="makingof">
             <Title>Making-of</Title>
-            <Text>Suite à la sortie du site <a src="http://kylianmbappe.com">kylianmbappe.com</a>, j'ai réalisé qu'il y avait une vrai idée qui méritait d'être développé pour passer un cap supérieur. Malgré le risque de travailler pour rien, je me devais de fournir l'effort nécessaire pour présenter ce que je pense être une nouvelle évolution dans la communication à la hauteur d'un sportif tel que Kylian.</Text>
+            <Text className="makingof-intro">Suite à la sortie du site <a src="http://kylianmbappe.com" target="_blank">kylianmbappe.com</a>, j'ai réalisé qu'il y avait une vrai belle idée méritant d'être développé pour passer un cap supérieur. Malgré le risque de travailler pour rien, je me devais de fournir l'effort nécessaire pour présenter ce que je pense être une nouvelle évolution dans la communication à la hauteur d'un sportif tel que Kylian.</Text>
             <Carrousel className="full">
                 <img src="https://res.cloudinary.com/aplu/image/upload/c_scale,h_500/v1536790779/makingof-1_eexrky.jpg" height="500" />
                 <img src="https://res.cloudinary.com/aplu/image/upload/c_scale,h_500/v1536790868/makingof-4_dqyc1z.jpg" height="500" />
@@ -16,9 +16,9 @@ const History = props => (
                 <img src="https://res.cloudinary.com/aplu/image/upload/c_scale,h_500/v1536791132/makingof-8_trhoea.jpg" height="500" />
                 <img src="https://res.cloudinary.com/aplu/image/upload/c_scale,h_500/v1536791172/makingof-2_olr3kb.jpg" height="500" />
             </Carrousel>
-            <Text>Depuis le 25 mai, je suis parti avec cette idée folle de pouvoir allier mes passions tout en espérant de pouvoir réaliser un rêve. Pas un seul moment je ne pouvais imaginer tous ce qui allait se passer durant les semaines à venir (et quelle joie immense vous alliez nous donner !). Je sais au fond de moi que j'ai le niveau, je suis sûr de mes compétences, mais vais-je réussir à trouver le moyen de ne pas passer inaperçu une fois mon travail réalisé ? Parmis des centaines, des milliers de messages qu'il doit recevoir chaque jour, comment quelqu'un qui n'est personne peu attirer l'attention ?</Text>
-            <Text>En attendant d'avoir une réponse, ma meilleure possibilité était de me faire remarquer par mon travail qui se doit d'être d'une exigence incomparable avant même de tenter tout contact.</Text>
-            <Text>Me voilà 4 mois plus tard, après un nombre d'idées et d'essais incalculables, ayant réussi à diriger tous les aspects, que ce soit le business et la stratégie, comme le développement du produit, et bien sur le design de cette application.</Text>
+            <Text>Depuis le 25 mai, je suis parti avec cette idée folle de pouvoir allier mes passions tout en espérant pouvoir réaliser un rêve. Pas un seul moment je ne pouvais imaginer tous ce qui allait se passer durant les semaines à venir, et quelle joie immense vous alliez nous donner !  Je ne doutes pas de mon niveau ou de mes compétences, mais vais-je réussir à trouver le moyen de ne pas passer inaperçu une fois mon travail réalisé ? Parmis des centaines, des milliers de messages qu'il doit recevoir chaque jour, comment quelqu'un qui n'est personne peu attirer l'attention ?</Text>
+            <Text>En attendant d'avoir une réponse, ma meilleure possibilité était de me faire remarquer par mon travail qui se doit d'être d'une exigence incomparable avant même de tenter toute tentative de contact.</Text>
+            <Text>Me voilà 4 mois plus tard, après un nombre d'idées et d'essais incalculables, ayant réussi à diriger tous les aspects de ce projet, du business et la stratégie, en passant par le développement du produit, au design de cette application.</Text>
         </ContentWrapper>
         <QuoteWrapper>
             <Quote>Quand vous faites un projet, qu'est-ce qui est important ?<br/>C'est les hommes qui portent ça ! <span>[..]</span> Si vous avez affaire à des gens sérieux, compétents et surtout qui ont une parole, vous êtes tranquille.</Quote>
@@ -26,15 +26,12 @@ const History = props => (
         </QuoteWrapper>
         <ContentWrapper className="grid" id="about">
             <Title>Qui suis-je ?</Title>
-            <Text>Antoine Plu, designer indépendant sur Paris. Durant ses 8 dernières années, j'ai travaillé aux côté de différentes entreprises pour les aider à trouver des solutions à leurs problématiques.</Text>
-            <Text>Grâce à mon expérience en agence de communication et social média ou encore dans le marketing mobile, j'ai choisis de me mettre à mon compte pour pouvoir utiliser ces compétences avec différentes sociétés.</Text>
-            <Text>Je crois au fait que le travail d'un designer à une double allégeance entre le client par qui il est payé mais aussi l'audience à laquelle il a une obligation. Cette position d'intermédiaire doit servir de pont pour connecter les éléments entre les deux.</Text>
-            <Text>Étant passionné des Rouges et Bleus mais encore plus par l'évolution de Kylian, je pense être la personne la plus compétente pour servir de passerelle entre ce projet et son public.</Text>
+            <Text><a href="https://twitter.com/AntoinePlu" target="_blank">Antoine Plu</a>, designer indépendant sur Paris. Durant ses 8 dernières années, j'ai travaillé aux côté de différentes entreprises pour les aider à trouver des solutions à leurs problématiques.</Text>
+            <Text>Grâce à mon expérience en agence de communication et social média ou encore dans le marketing mobile, j'ai choisis de me mettre à mon compte pour pouvoir utiliser ces compétences aux côtés de différentes sociétés.</Text>
+            <Text>Je pense que le travail d'un designer à une double obligation entre le client par qui il est employé mais aussi à son audience à laquelle il a de devoir de créer ce qui est le plus adapté. Cette position d'intermédiaire doit servir de pont pour connecter les éléments entre les deux.</Text>
+            <Text>Étant passionné du PSG mais encore plus par l'évolution de Kylian, je pense être la personne la plus compétente pour délivrer un tel projet et continuer d'améliorer sa communication auprès de son public.</Text>
             <Logos className="full" src="https://res.cloudinary.com/aplu/image/upload/v1536764236/logos_xiknts.png" />
             <Credits className="grid">
-                <ProfilePic src="https://pbs.twimg.com/profile_images/943082975314546689/HVaWQiah_400x400.jpg" />
-                <Author>Antoine Plu</Author>
-                <Job>Designer Indépendant</Job>
                 <Signature src="https://res.cloudinary.com/aplu/image/upload/v1537657397/signature_ywkykg.png" />
                 <Contact />
             </Credits>
@@ -51,7 +48,7 @@ const ContentWrapper = styled.div`
     &#makingof { padding-top: 100px; }
     &#about { padding-top: 100px; }
 
-    p:not(:nth-child(-1n+2)) {
+    p:not(:nth-child(1)) {
         margin-bottom: 32px;
     }
 `
@@ -74,6 +71,7 @@ const Text = styled.p`
 
     a {
         color: #2F80ED;
+        text-decoration:none;
 
         :hover {
             text-decoration: underline;
@@ -121,7 +119,7 @@ const QuoteWrapper = styled.div`
 `
 const Quote = styled.h2`
     color: white;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 24px;
     line-height: 1.4;
     text-align: center;
@@ -158,7 +156,7 @@ const Logos = styled.img`
     }
 `
 const Credits = styled.div`
-    max-width: 60%;
+    /*max-width: 60%;*/
     margin: 0 auto 200px auto;
 
     > .contactwrapper {
@@ -211,7 +209,7 @@ const Links = styled.ul`
     }
 `
 const Signature = styled.img`
-    backg
+    margin: 0 auto 40px;
 `
 
 export default History

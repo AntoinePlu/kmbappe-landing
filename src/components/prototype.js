@@ -7,7 +7,7 @@ const Prototype = props => (
 	<VideoContent>
         <Wrapper>
             <Title>L'indispensable qu'il vous faut. <span>À porté de main.</span></Title>
-            <Text>Nombre des apps intégrées à votre MacBook Pro disposent de commandes accessibles par la Touch Bar pour vous faciliter les tâches courantes, comme l’envoi d’un e‑mail ou la mise en forme d’un document. La Touch Bar change en .</Text>
+            <Text>Suivez tous les faits et gestes de l'un des meilleures sportifs mondial grâce à la nouvelle plateforme de Kylian Mbappé. Le carrefour d'une communication au plus proche de son public grâce à cette application première en son genre.</Text>
             <Player
                 poster="https://res.cloudinary.com/aplu/image/upload/c_scale,h_800,q_50/v1536421585/Prototype-poster_gmohic.jpg"
                 src="https://res.cloudinary.com/aplu/video/upload/c_scale,h_800/v1537374268/KMbappe-demo-1440_sxlihq.mp4"
@@ -15,7 +15,6 @@ const Prototype = props => (
                 video
             >
                 <BigPlayButton position="center" />
-                <ControlBar disabled autoHide={true}/>
             </Player>
         </Wrapper>
     </VideoContent>
@@ -43,6 +42,11 @@ const Title = styled.h1`
     color:white;
     margin-block-start: 1.33em;
 
+    span {
+        display: table;
+        margin: auto;
+    }
+
     @media (max-width: 640px) {
         max-width: 90%;
         margin: auto;
@@ -63,6 +67,7 @@ const Text = styled.p`
     @media (max-width: 640px) {
         max-width: 90%;
     }
+
 `
 
 export default Prototype

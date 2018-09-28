@@ -95,16 +95,16 @@ class Modal extends Component {
 
 const OpenModal = styled.div`
     cursor: pointer;
-    background: white;
+    background: #2F80ED;
     border-radius: 6px;
-    border: 1px solid hsla(0, 0%, 90%, 1);
+    border: 1px solid hsla(214, 84%, 50%, 80%);
     padding: 8px 16px;
     text-decoration: none;
-    color: #2F80ED;
+    color: #fff;
     font-weight: 500;
     font-size: 13px;
     text-transform: uppercase;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     display: ${props => props.display};
 
     &:active {

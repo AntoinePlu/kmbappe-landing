@@ -85,7 +85,7 @@ class Contact extends Component {
         <OpenModal
             onClick={this.handleClick}
         >
-            Contacter
+            Contact
         </OpenModal>
         {this.state.showModal ? modal : ""}
       </div>

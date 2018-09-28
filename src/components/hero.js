@@ -14,7 +14,7 @@ const Hero = props => (
             <NewsScreen src="https://res.cloudinary.com/aplu/image/upload/v1536939459/news-1_vkntvb.png" />
             <div className="grid">
                 <Title>Ne manquez plus un instant</Title>
-                <Text>Regroupé dans un seul et même endroit, retrouvez toutes les informations de votre joueur favoris. Photos, vidéos, presse ou encore debrief de match, consommez tous ce qui vous intéresse comme vous le voulez.</Text>
+                <Text>Retrouvez dans un seul et même endroit, toutes les informations de votre joueur favoris. Photos, vidéos, presse ou encore debrief de match, consommez tous ce qui vous intéresse comme vous le voulez et où vous voulez.</Text>
             </div>
         </News>
         <Analyze className="full">
@@ -22,7 +22,7 @@ const Hero = props => (
                 src="https://res.cloudinary.com/aplu/image/upload/v1536940147/fixture-list_bm5619.png" />
             <div>
                 <LeftTitle>Chaque match.<span>Dans les moindres détails.</span></LeftTitle>
-                <LeftText>Sous le maillot aux deux étoiles ou en Rouge et Bleu, chaque match est à votre portée de main accompagné du résumé et des statistiques personnelles de Kylian ou d'un de ses coéquipiers.</LeftText>
+                <LeftText>Sous le maillot de nos deux cher étoile ou en Rouge et Bleu, chaque match est à votre portée de main en quelques clics seulement. Des résumés détaill´ et bien sûr les statistiques personnelles de Kylian ou d'un de ses coéquipiers. </LeftText>
             </div>
         </Analyze>
         <Stats>
@@ -30,12 +30,12 @@ const Hero = props => (
                 src="https://res.cloudinary.com/aplu/image/upload/v1536791318/stats_yppyu7.jpg" />
             <div>
                 <StatsTitle>Analyser les performances à travers les années</StatsTitle>
-                <StatsText>Ne cherchez plus où trouvez l'ensemble des statistiques de Kylian, vous venez de le trouver. La nouvelle référence impressionne sur le terrain comme dans sa communication et vous le prouve une nouvelle fois en mettant à disposition de ses fans, les données toutes compétitions confondues disponibles de ses performances.</StatsText>
+                <StatsText>Ne cherchez plus où trouvez l'ensemble des statistique de Kylian, vous venez de le trouver. La nouvelle référence impressionne sur le terrain comme dans sa communication et vous le prouve une nouvelle fois en mettant à disposition de ses fans, les données toutes compétitions confondues disponibles de ses performances.</StatsText>
             </div>
         </Stats>
         <Videos>
             <Title>Revivez en image les meilleurs moments</Title>
-            <Text>Reportage, documentaire, résumé de l'année ou encore meilleure vidéos de fans, votre champion du monde se livre auprès des cameras des médias sans langue de bois. Revivez les plus beaux moments de la saisons grâce à cette selection.</Text>
+            <Text>Reportage, documentaire, résumé de l'année ou encore meilleure vidéos de fans, votre champion du monde se livre auprès des cameras des médias sans langue de bois. Revivez les plus beaux moments de la saison grâce à cette selection.</Text>
             <img src ="https://res.cloudinary.com/aplu/image/upload/v1536791270/videos_xefisq.jpg" />
         </Videos>
     </div>
@@ -80,7 +80,7 @@ const QuoteWrapper = styled.div`
     }
 `
 const Quote = styled.h2`
-    font-weight: 400;
+    font-weight: 500;
     font-size: 24px;
     line-height: 1.4;
     text-align: center;
@@ -112,7 +112,7 @@ const News = styled.div`
     margin-top: 0px;
 
     p {
-        max-width: 580px;
+        max-width: 610px;
     }
 
     @media (max-width: 640px) {
