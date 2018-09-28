@@ -12,7 +12,6 @@ const Prototype = props => (
                 poster="https://res.cloudinary.com/aplu/image/upload/c_scale,h_800,q_50/v1536421585/Prototype-poster_gmohic.jpg"
                 src="https://res.cloudinary.com/aplu/video/upload/c_scale,h_800/v1537374268/KMbappe-demo-1440_sxlihq.mp4"
                 playsInline
-                video
             >
                 <BigPlayButton position="center" />
             </Player>
