@@ -22,7 +22,7 @@ const Hero = props => (
                 src="https://res.cloudinary.com/aplu/image/upload/v1536940147/fixture-list_bm5619.png" />
             <div>
                 <LeftTitle>Chaque match.<span>Dans les moindres détails.</span></LeftTitle>
-                <LeftText>Sous le maillot de nos deux cher étoile ou en Rouge et Bleu, chaque match est à votre portée de main en quelques clics seulement. Des résumés détaill´ et bien sûr les statistiques personnelles de Kylian ou d'un de ses coéquipiers. </LeftText>
+                <LeftText>Sous le maillot de nos deux cher étoile ou en Rouge et Bleu, chaque match est à votre portée de main en quelques clics seulement. Des résumés détaillés et bien sûr les statistiques personnelles de Kylian ou d'un de ses coéquipiers. </LeftText>
             </div>
         </Analyze>
         <Stats>
@@ -30,7 +30,7 @@ const Hero = props => (
                 src="https://res.cloudinary.com/aplu/image/upload/v1536791318/stats_yppyu7.jpg" />
             <div>
                 <StatsTitle>Analyser les performances à travers les années</StatsTitle>
-                <StatsText>Ne cherchez plus où trouvez l'ensemble des statistique de Kylian, vous venez de le trouver. La nouvelle référence impressionne sur le terrain comme dans sa communication et vous le prouve une nouvelle fois en mettant à disposition de ses fans, les données toutes compétitions confondues disponibles de ses performances.</StatsText>
+                <StatsText>Ne cherchez plus où trouvez l'ensemble des statistique de Kylian, vous venez de le trouver. La nouvelle référence impressionne sur le terrain comme dans sa communication et vous le prouve une nouvelle fois en mettant à disposition de ses fans, les données toutes compétitions confondues de ses performances.</StatsText>
             </div>
         </Stats>
         <Videos>
