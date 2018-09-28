@@ -102,6 +102,7 @@ const OpenModal = styled.div`
     font-size: 13px;
     text-transform: uppercase;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     background: #2F80ED;
 	color: #fff;
 	padding: 10px 24px;

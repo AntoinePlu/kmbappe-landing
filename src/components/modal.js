@@ -98,6 +98,7 @@ const OpenModal = styled.div`
     background: #2F80ED;
     border-radius: 6px;
     border: 1px solid hsla(214, 84%, 50%, 80%);
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     padding: 8px 16px;
     text-decoration: none;
     color: #fff;
