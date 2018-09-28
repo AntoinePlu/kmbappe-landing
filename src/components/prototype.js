@@ -6,7 +6,7 @@ import "../../node_modules/video-react/dist/video-react.css"; // import css
 const Prototype = props => (
 	<VideoContent>
         <Wrapper>
-            <Title>L'indispensable qu'il vous faut.<br/> À porté de main.</Title>
+            <Title>L'indispensable qu'il vous faut. <span>À porté de main.</span></Title>
             <Text>Nombre des apps intégrées à votre MacBook Pro disposent de commandes accessibles par la Touch Bar pour vous faciliter les tâches courantes, comme l’envoi d’un e‑mail ou la mise en forme d’un document. La Touch Bar change en .</Text>
             <Player
                 poster="https://res.cloudinary.com/aplu/image/upload/c_scale,h_800,q_50/v1536421585/Prototype-poster_gmohic.jpg"

@@ -13,29 +13,30 @@ const Hero = props => (
         <News>
             <NewsScreen src="https://res.cloudinary.com/aplu/image/upload/v1536939459/news-1_vkntvb.png" />
             <div className="grid">
-                <Title>Ne manquez plus une miette</Title>
-                <Text>Hey there, this is the default text for a new paragraph. Feel free to edit this paragraph by clicking on the yellow edit icon. After you are done just click on the yellow checkmark button on the top right. Have Fun! Hey there, this is the default text for a new paragraph. Feel free to edit this paragraph by clicking on the yellow edit icon.</Text>
+                <Title>Ne manquez plus un instant</Title>
+                <Text>Regroupé dans un seul et même endroit, retrouvez toutes les informations de votre joueur favoris. Photos, vidéos, presse ou encore debrief de match, consommez tous ce qui vous intéresse comme vous le voulez.</Text>
             </div>
         </News>
         <Analyze className="full">
             <Fixture
                 src="https://res.cloudinary.com/aplu/image/upload/v1536940147/fixture-list_bm5619.png" />
             <div>
-                <LeftTitle>Débrieffez de chaque match</LeftTitle>
-                <LeftText>Hey there, this is the default text for a new paragraph. Feel free to edit this paragraph by clicking on the yellow edit icon. After you are done just click on the yellow checkmark button on the top right. Have Fun!</LeftText>
+                <LeftTitle>Chaque match.<span>Dans les moindres détails.</span></LeftTitle>
+                <LeftText>Sous le maillot aux deux étoiles ou en Rouge et Bleu, chaque match est à votre portée de main accompagné du résumé et des statistiques personnelles de Kylian ou d'un de ses coéquipiers.</LeftText>
             </div>
         </Analyze>
         <Stats>
             <SeasonStats
                 src="https://res.cloudinary.com/aplu/image/upload/v1536791318/stats_yppyu7.jpg" />
             <div>
-                <StatsTitle>Avec toutes les stats, plus rien ne peux vous échapper</StatsTitle>
-                <StatsText>Analysez les performances de Kylian durant chaque match et comparez-le à d'autres joueurs pour confirmer votre ressenti. Analysez les performances de Kylian durant chaque match et comparez-le à d'autres joueurs pour confirmer votre ressenti.</StatsText>
+                <StatsTitle>Analyser les performances à travers les années</StatsTitle>
+                <StatsText>Ne cherchez plus où trouvez l'ensemble des statistiques de Kylian, vous venez de le trouver. La nouvelle référence impressionne sur le terrain comme dans sa communication et vous le prouve une nouvelle fois en mettant à disposition de ses fans, les données toutes compétitions confondues disponibles de ses performances.</StatsText>
             </div>
         </Stats>
         <Videos>
-            <Title>Revivez les meilleurs moments</Title>
-            <Text>Hey there, this is the default text for a new paragraph. Feel free to edit this paragraph by clicking on the yellow edit icon.</Text>
+            <Title>Revivez en image les meilleurs moments</Title>
+            <Text>Reportage, documentaire, résumé de l'année ou encore meilleure vidéos de fans, votre champion du monde se livre auprès des cameras des médias sans langue de bois. Revivez les plus beaux moments de la saisons grâce à cette selection.</Text>
+            <img src ="https://res.cloudinary.com/aplu/image/upload/v1536791270/videos_xefisq.jpg" />
         </Videos>
     </div>
 )
@@ -110,6 +111,10 @@ const News = styled.div`
     flex-direction: column;
     margin-top: 0px;
 
+    p {
+        max-width: 580px;
+    }
+
     @media (max-width: 640px) {
         margin-top: 10px;
 
@@ -149,6 +154,9 @@ const Analyze = styled.div`
 
         p {
             margin: inherit;
+        }
+        span {
+            display: table;
         }
     }
     @media (max-width: 640px) {
@@ -200,11 +208,11 @@ const Stats = styled.div`
         margin-top: 0;
         margin-left: 0;
         padding-top: 0;
-        max-width: 450px;
+        max-width: 470px;
     }
 
     p {
-        max-width: 450px;
+        max-width: 460px;
         margin-left: 0;
     }
 
@@ -241,15 +249,22 @@ const SeasonStats = styled.img`
     max-height: 750px;
 `
 const Videos = styled.div`
-    background-image: url('https://res.cloudinary.com/aplu/image/upload/v1536791270/videos_xefisq.jpg');
+    /*background-image: url('https://res.cloudinary.com/aplu/image/upload/v1536791270/videos_xefisq.jpg');
     background-size: auto 558px;
     background-repeat: no-repeat;
     background-position: center 80px;
-    height: 650px;
+    height: 650px;*/
     margin-bottom: 180px;
-    
+    display: flex;
+	flex-direction: column;
+
     h1 {
         padding-top: 0;
+    }
+
+    img {
+        min-width: 998px;
+        margin: auto;
     }
 
     @media (max-width: 640px) {

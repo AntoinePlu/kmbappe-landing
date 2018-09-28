@@ -35,7 +35,7 @@ const History = props => (
                 <ProfilePic src="https://pbs.twimg.com/profile_images/943082975314546689/HVaWQiah_400x400.jpg" />
                 <Author>Antoine Plu</Author>
                 <Job>Designer Indépendant</Job>
-                <Signature />
+                <Signature src="https://res.cloudinary.com/aplu/image/upload/v1537657397/signature_ywkykg.png" />
                 <Contact />
             </Credits>
         </ContentWrapper>
@@ -210,6 +210,8 @@ const Links = styled.ul`
         }
     }
 `
-const Signature = styled.img``
+const Signature = styled.img`
+    backg
+`
 
 export default History
