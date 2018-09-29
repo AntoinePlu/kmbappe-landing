@@ -133,11 +133,13 @@ const ModalWindow = styled.div`
     left: 50%;
     position: fixed;
 	background: white;
-    min-width: 20.5%;
+    min-width: 320px;
 	border-radius: 8px;
 	overflow: hidden;
     display: flex;
 	flex-direction: column;
+    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2) 0s;
+
     @media (max-width: 640px) {
         min-width: 92%;
     }
@@ -189,11 +191,12 @@ const Content = styled.div`
         margin-bottom: 24px;
     `
     const Email = styled.a`
-        margin: 16px auto 8px auto;
+        margin: 16px auto 16px auto;
         color: #2F80ED;
     `
     const Tel = styled.p`
-        margin: auto;
+        margin: 8px auto 0;
+        font-weight: 500;
     `
     const Links = styled.div`
         margin: 16px auto 32px;
@@ -202,7 +205,8 @@ const Content = styled.div`
             color: rgba(255,255,255,.8);
             padding: 6px 12px;
 	        border-radius: 4px;
-            color: rgba(255,255,255,.8) !important;
+            font-size: 14px;
+            color: #fff !important;
         }
 
         .twitter { background: #55acee; margin-right: 16px; }
@@ -214,7 +218,10 @@ const Content = styled.div`
         padding: 16px 0;
         margin: auto;
         text-align: center;
-
+        
+        a {
+            color: #2F80ED !important;
+        }
     `
 
 export default Modal

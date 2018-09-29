@@ -178,7 +178,7 @@ const Analyze = styled.div`
             margin: 0;
 
             h1 { 
-                max-width: 320px;
+                max-width: 330px;
                 margin: 0 auto 0.5em auto;
 	            text-align: center;
                 padding-top: 450px;

@@ -65,6 +65,7 @@ const Text = styled.p`
 
     @media (max-width: 640px) {
         max-width: 90%;
+        margin-bottom: 80px;
     }
 
 `
