@@ -241,7 +241,7 @@ const Stats = styled.div`
             h1 { 
                 text-align: center;
                 margin: 0 auto 0.5em auto;
-                max-width: 90%;
+                max-width: 100%;
             }
 
             p {
