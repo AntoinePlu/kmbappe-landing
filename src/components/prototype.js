@@ -9,7 +9,7 @@ const Prototype = props => (
             <Title>L'indispensable qu'il vous faut. <span>À porté de main.</span></Title>
             <Text>Suivez tous les faits et gestes de l'un des meilleures sportifs mondial grâce à la nouvelle plateforme de Kylian Mbappé. Le carrefour d'une communication au plus proche de son public grâce à cette application première en son genre.</Text>
             <Player
-                poster="https://res.cloudinary.com/aplu/image/upload/c_scale,h_800,q_50/v1536421585/Prototype-poster_gmohic.jpg"
+                poster="https://res.cloudinary.com/aplu/image/upload/c_scale,h_800,q_80/v1538230187/Prototype-poster-2_cuqmec.png"
                 src="https://res.cloudinary.com/aplu/video/upload/c_scale,h_800/v1537374268/KMbappe-demo-1440_sxlihq.mp4"
                 playsInline
             >
