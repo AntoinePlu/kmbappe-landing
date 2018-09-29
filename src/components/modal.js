@@ -55,10 +55,7 @@ class Modal extends Component {
                 <ProfilePic src="https://pbs.twimg.com/profile_images/943082975314546689/HVaWQiah_400x400.jpg" />
                 <Author>Antoine Plu</Author>
                 <Job>Designer Indépendant</Job>
-                <ContactInfo>
-                    <Email href="mailto:pluantoine+kmbappe@gmail.com?subject=Application Mobile Kylian Mbappé">pluantoine@gmail.com</Email>
-                    <Tel>06 89 19 93 51</Tel>
-                </ContactInfo>
+                <Email href="mailto:pluantoine+kmbappe@gmail.com?subject=Application Mobile Kylian Mbappé" className="emailadress">pluantoine@gmail.com</Email>
                 <Links>
                     <a className="twitter" href="http://twitter.com/AntoinePlu">Twitter</a>
                     <a className="linkedin" href="http://linkedin.com/in/AntoinePlu">LinkedIn</a>
@@ -165,6 +162,10 @@ const Content = styled.div`
 	margin: auto;
     margin-top: -40px;
     z-index: 10;
+
+    .emailadress {
+        color: #2F80ED;
+    }
 `
     const ProfilePic = styled.img`
         width: 100px;
@@ -188,11 +189,10 @@ const Content = styled.div`
         font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
         letter-spacing: -.022em;
         margin-bottom: 0;
-        margin-bottom: 24px;
     `
     const Email = styled.a`
         margin: 16px auto 16px auto;
-        color: #2F80ED;
+        color: #2F80ED !important;
     `
     const Tel = styled.p`
         margin: 8px auto 0;
