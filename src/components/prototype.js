@@ -49,6 +49,7 @@ const Title = styled.h1`
     @media (max-width: 640px) {
         max-width: 90%;
         margin: auto;
+        line-height: 1.1;
     }
 `
 const Text = styled.p`
