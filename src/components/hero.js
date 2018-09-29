@@ -30,12 +30,12 @@ const Hero = props => (
                 src="https://res.cloudinary.com/aplu/image/upload/v1536791318/stats_yppyu7.jpg" />
             <div>
                 <StatsTitle>Analyser les performances à travers les années</StatsTitle>
-                <StatsText>Ne cherchez plus où trouvez l'ensemble des statistique de Kylian, vous venez de le trouver. La nouvelle référence impressionne sur le terrain comme dans sa communication et vous le prouve une nouvelle fois en mettant à disposition de ses fans, les données toutes compétitions confondues de ses performances.</StatsText>
+                <StatsText>Ne cherchez plus où trouvez l'ensemble des statistiques de Kylian, vous venez de le trouver. La nouvelle référence impressionne sur le terrain comme dans sa communication et vous le prouve une nouvelle fois en mettant à disposition de ses fans, les données toutes compétitions confondues de ses performances.</StatsText>
             </div>
         </Stats>
         <Videos>
             <Title>Revivez en image les meilleurs moments</Title>
-            <Text>Reportage, documentaire, résumé de l'année ou encore meilleure vidéos de fans, votre champion du monde se livre auprès des cameras des médias sans langue de bois. Revivez les plus beaux moments de la saison grâce à cette selection.</Text>
+            <Text>Reportages, documentaires, résumé de l'année ou encore meilleures vidéos de fans, votre champion du monde se livre auprès des cameras des médias sans langue de bois. Revivez les plus beaux moments de la saison grâce à cette selection.</Text>
             <img src ="https://res.cloudinary.com/aplu/image/upload/v1536791270/videos_xefisq.jpg" />
         </Videos>
     </div>
