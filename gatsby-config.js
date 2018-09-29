@@ -21,7 +21,7 @@ module.exports = {
         // Avoids sending pageview hits from custom paths
         exclude: ["/preview/**", "/do-not-track/me/too/"],
         // Enables Google Optimize using your container Id
-        optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
+        optimizeId: "UA-25958744-2",
         // Any additional create only fields (optional)
         sampleRate: 5,
         siteSpeedSampleRate: 10,
