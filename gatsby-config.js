@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Kylan Mbappe App by Antoine Plu',
-    description: `Application mobile de Kylian Mbappé créé par Antoine Plu`,
+    title: 'Kylian Mbappé App – Par Antoine Plu',
+    description: `"Ma volonté est de créer le carrefour de tous mes outils de communication." – KM7`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
