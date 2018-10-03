@@ -27,7 +27,7 @@ const History = props => (
         <ContentWrapper className="grid" id="about">
             <Title>Qui suis-je ?</Title>
             <Text><a href="https://twitter.com/AntoinePlu" target="_blank">Antoine Plu</a>, designer indépendant sur Paris. Durant ces 8 dernières années, j'ai travaillé aux côté de différentes entreprises pour les aider à trouver des solutions à leurs problématiques.</Text>
-            <Text>Grâce à mon expérience en agence de communication et social média ou encore dans le marketing mobile, j'ai choisis de me mettre à mon compte pour pouvoir utiliser ces compétences aux côtés de différentes sociétés.</Text>
+            <Text>Grâce à mon expérience en agence de communication et social média ou encore dans le marketing mobile, j'ai choisi de me mettre à mon compte pour pouvoir utiliser ces compétences aux côtés de différentes sociétés.</Text>
             <Text>Je pense que le travail d'un designer à une double obligation entre le client par qui il est employé mais aussi à son audience à laquelle il a de devoir de créer ce qui est le plus adapté. Cette position d'intermédiaire doit servir de pont pour connecter les éléments entre les deux.</Text>
             <Text>Étant passionné du PSG mais encore plus par l'évolution de Kylian, je pense être la personne la plus compétente pour délivrer un tel projet et continuer d'améliorer sa communication auprès de son public.</Text>
             <Logos className="full" src="https://res.cloudinary.com/aplu/image/upload/v1536764236/logos_xiknts.png" />
